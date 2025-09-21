@@ -1,7 +1,7 @@
 import styles from "./Notifications.module.css";
 import Bug from "../../assets/images/activities/Bug.svg";
 import User from "../../assets/images/activities/Account.svg";
-import Notification from "../../assets/images/activities/notification.svg";
+import Notification from "../../assets/images/activities/Notification.svg";
 const notifications = [
   { icon: Bug, text: "You have a bug that needs...", time: "Just now" },
   { icon: User, text: "New user registered", time: "59 minutes ago" },
