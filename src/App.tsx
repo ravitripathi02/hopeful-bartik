@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Leftnav from "./components/Leftnav/Leftnav"; 
 import Rightbar from "./components/RightNav/RightNav";
 import TopBar from "./components/TopBar/TopBar";
-import OrderTable from "./components/OrderTable/OrderTable";
+import OrderTable from "./pages/OrderTable/OrderTable";
 import './App.css'
 import { useNav } from "./context/NavContext";
 import { useDeviceType } from "./hooks/useDevice";
