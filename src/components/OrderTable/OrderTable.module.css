@@ -1,0 +1,184 @@
+/* OrderTable.module.css */
+.tableContainer {
+  /* background: white; */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tableTitle {
+  font-size: 20px;
+  font-weight: 600;
+  /* color: #1a1a1a; */
+  margin: 0;
+}
+
+.searchBox {
+  padding: 5px;
+  border: 1px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 200px;
+  outline: none;
+  background: var(--bg-color);
+  transition: border-color 0.2s;
+}
+
+.searchBox:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+.ordersTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ordersTable th {
+  text-align: left;
+  padding: 16px 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #64748b;
+  border-bottom: 1px solid #e1e5e9;
+  cursor: pointer;
+  user-select: none;
+}
+
+.sortIndicator {
+  margin-left: 4px;
+  font-size: 12px;
+}
+
+.ordersTable td {
+  padding: 5px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+  /* color: #334155; */
+}
+
+.ordersTable tr:last-child td {
+  border-bottom: none;
+}
+
+
+.orderId {
+  font-weight: 600;
+  color: #4f46e5 !important;
+}
+
+.userCell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* .address {
+  color: #64748b !important;
+}
+
+.date {
+  color: #64748b !important;
+} */
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.inprogress {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.complete {
+  background-color: #d1fae5;
+  color: #059669;
+}
+
+.pending {
+  background-color: #e0e7ff;
+  color: #4f46e5;
+}
+
+.approved {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.rejected {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.paginationButton {
+  padding: 8px 16px;
+  background: white;
+  border: 1px solid #e1e5e9;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.paginationButton:hover:not(:disabled) {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.paginationButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pageInfo {
+  font-size: 14px;
+  color: #64748b;
+}
+.controls{
+  background-color: var(--card-bg);
+  display: flex;
+  padding: 5px;
+  border-radius: 8px;
+  justify-content: space-between;
+}
+.buttonGroup{
+  display: flex;
+  gap:0.5rem;
+}

@@ -1,0 +1,95 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Inter;
+}
+html, body, #root {
+  height: 100%;    
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --card-bg-light: #E3F5FF;
+  --card-bg-dark: #E5ECF6;
+  --primary-text-color: grey;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #f7f9fb;
+  --tab-bg-color:rgb(247, 249, 251);
+  --customer-card-bg: #E3F5FF;
+  --orders-card-bg: #F7F9FB;
+  --revenue-card-bg: #F7F9FB;
+  --products-card-bg: #E5ECF6;
+  --rev-text-color: #000000;
+   --icon-filter: invert(0);
+}
+
+.dark {
+  --rev-text-color: #000000;
+  --customer-card-bg: #E3F5FF;
+  --orders-card-bg: #FFFFFF0D;
+  --revenue-card-bg: #FFFFFF0D;
+  --products-card-bg: #E5ECF6;
+  --card-bg-light: #F7F9FB;
+  --card-bg-dark: #FFFFFF0D;
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #1e1e1e;
+  --tab-bg-color: rgba(255, 255, 255, 0.05);
+  --icon-filter: invert(1);
+
+}
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+.app-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-container {
+  padding: 1.25rem;
+  width: 15%;
+  border-right: 1px solid #eee;
+  background: var(--bg-color);
+  transition: transform 0.3s ease-in-out;
+}
+
+.middle-container {
+  flex: 1;
+}
+
+.right-container {
+  width: 15%;          
+  border-left:  1px solid #eee;;
+  padding: 20px;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* LEFT SIDEBAR */
+.leftOpen {
+  transform: translateX(0);
+}
+
+.leftClosed {
+  transform: translateX(-100%);
+}
+
+/* RIGHT SIDEBAR */
+.rightOpen {
+  transform: translateX(0);
+}
+
+.rightClosed {
+  transform: translateX(100%);
+}

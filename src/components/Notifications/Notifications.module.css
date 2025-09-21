@@ -1,0 +1,38 @@
+.sectionTitle {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+         border-radius: 25%;
+    justify-content: center;
+    align-items: center;
+    background: #E5ECF6;
+    width: 25px;
+    display: flex;
+    height: 25px;
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+.text {
+  font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+
+}
+
+.time {
+  color: #888;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 1rem; /* space between items */
+  padding: 2rem;
+  grid-auto-rows: 280px; /* equal height rows */
+}
+
+.item {
+  display: flex;
+  background: #f7f9fb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.itemWhite {
+  background: #fff; /* optional alternate bg for some items */
+}
