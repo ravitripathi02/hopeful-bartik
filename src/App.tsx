@@ -43,6 +43,7 @@ function App() {
   </div>
 {isRightOpen && 
   <div className={`right-container ${isRightOpen ? "rightOpen" : "rightClosed"}`}>
+   <a href="/order">Go to Orders</a>
     <Rightbar />
   </div>}
 </main>
