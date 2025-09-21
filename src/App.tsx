@@ -38,8 +38,6 @@ function App() {
     <TopBar />
     <Routes>
       <Route path="/" element={<Home />} />
-    </Routes>
-    <Routes>
       <Route path="/order" element={<OrderTable />} />
     </Routes>
   </div>
