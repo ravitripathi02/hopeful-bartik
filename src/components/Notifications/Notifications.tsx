@@ -1,5 +1,5 @@
 import styles from "./Notifications.module.css";
-import Bug from "../../assets/images/activities/bug.svg";
+import Bug from "../../assets/images/activities/Bug.svg";
 import User from "../../assets/images/activities/Account.svg";
 import Notification from "../../assets/images/activities/notification.svg";
 const notifications = [
