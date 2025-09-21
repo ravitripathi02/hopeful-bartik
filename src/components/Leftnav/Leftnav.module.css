@@ -1,0 +1,61 @@
+.outerDiv{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.accountContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:0.5rem;
+    /* margin-bottom: 2rem; */
+}
+.frequentTabs{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 14px;
+    color: var(--primary-text-color);
+}
+.favourite{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+}
+.section{
+        display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top:2rem;
+}
+.circle{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-text-color);
+    display: inline-block;
+    margin-right: 0.25rem;
+}
+.heading{
+
+}
+.active{
+    background: var(--tab-bg-color);
+    border-radius: 0.5rem;
+}
+.dash{
+    position: absolute;
+    left: 0px;
+    background: var(--text-color);
+    height: 16px;
+    width: 4px;
+    border-radius: 4px;
+}
+.icon {
+  filter: invert(0); /* normal for light mode */
+}
+
+body.dark .icon {
+  filter: invert(1); /* white for dark mode */
+}

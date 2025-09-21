@@ -1,0 +1,55 @@
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+  /* background: #fff; */
+  border-bottom: 1px solid #eee;
+  font-family: Inter, sans-serif;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.icon {
+  font-size: 1.25rem;
+  color: #222;
+  cursor:pointer;
+}
+
+.section {
+  color: #aaa;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.divider {
+  color: #aaa;
+  margin: 0 0.5rem;
+}
+
+.active {
+  color: #222;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.search {
+  background: var(--card-bg);
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 2.5rem 0.5rem 2rem;
+  font-size: 1rem;
+  color: #aaa;
+  width: 160px;
+  margin-right: 1rem;
+}
