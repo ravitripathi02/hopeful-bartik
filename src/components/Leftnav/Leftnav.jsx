@@ -19,7 +19,7 @@ function Leftnav() {
         <div style={{fontSize:"14px"}}>ByeWind</div>
         </div>
         {device!=="desktop" &&
-        <div onClick={toggleLeft} style={{color:"var(--text-color)", border:"none", padding:"5px 10px", cursore:"pointer"}}>X</div>
+        <div onClick={toggleLeft} style={{color:"var(--text-color)", border:"none", padding:"5px 10px", cursor:"pointer"}}>X</div>
         }
         
       </div>

@@ -106,7 +106,8 @@ const OrderTable = () => {
               <td className={styles.address}>{order.address}</td>
               <td className={styles.date}>{order.date}</td>
               <td>
-                <span className={`${styles.status} ${styles[order.status.toLowerCase().replace(" ", "")]}`}>
+                <span className={`${styles.status} ${styles[order.status.replace(" ", "")]}`}>
+                  <span className={`${styles.circle} ${styles[order.status.toLowerCase().replace(" ", "")]}`}></span>
                   {order.status}
                 </span>
               </td>

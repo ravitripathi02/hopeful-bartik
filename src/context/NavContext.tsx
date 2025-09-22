@@ -18,9 +18,18 @@ export const NavProvider = ({ children }: NavProviderProps) => {
   const device = useDeviceType();
   const [isLeftOpen, setIsLeftOpen] = useState(device !== "desktop" ? false : true);
   const [isRightOpen, setIsRightOpen] = useState(device !== "desktop" ? false : true);
-
-  const toggleLeft = () => setIsLeftOpen((prev) => !prev);
-  const toggleRight = () => setIsRightOpen((prev) => !prev);
+  const toggleLeft = () => {
+    setIsLeftOpen((prev) => !prev)
+    if(device!=="desktop" && isRightOpen){
+      setIsRightOpen(false)
+    }
+    };
+  const toggleRight = () => {
+    setIsRightOpen((prev) => !prev)
+    if(device!=="desktop" && isLeftOpen){
+      setIsLeftOpen(false)
+    }
+      };
 
   return (
     <NavContext.Provider value={{ isLeftOpen, isRightOpen, toggleLeft, toggleRight }}>

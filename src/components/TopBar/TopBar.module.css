@@ -53,3 +53,9 @@
   width: 160px;
   margin-right: 1rem;
 }
+
+@media (max-width: 670px) {
+  .search, .hidden {
+    display: none;
+  }
+}

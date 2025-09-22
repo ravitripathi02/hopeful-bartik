@@ -137,7 +137,7 @@
 
 .pagination {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   gap: 16px;
   margin-top: 24px;
@@ -181,4 +181,36 @@
 .buttonGroup{
   display: flex;
   gap:0.5rem;
+}
+.circle{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    /* background-color: var(--primary-text-color); */
+    display: inline-block;
+    margin-right: 0.25rem;
+}
+.InProgress {
+  /* background-color: #fef3c7; */
+  color: #d97706;
+}
+
+.Complete {
+  /* background-color: #d1fae5; */
+  color: #059669;
+}
+
+.Pending {
+  /* background-color: #e0e7ff; */
+  color: #4f46e5;
+}
+
+.Approved {
+  /* background-color: #dcfce7; */
+  color: #16a34a;
+}
+
+.Rejected {
+  /* background-color: #fee2e2; */
+  color: #dc2626;
 }

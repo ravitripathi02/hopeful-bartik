@@ -62,7 +62,8 @@ body {
 
 .right-container {
   width: 15%;          
-  border-left:  1px solid #eee;;
+  border-left:  1px solid #eee;
+  background: var(--bg-color);
   padding: 20px;
 }
 .sidebar {
@@ -93,3 +94,4 @@ body {
 .rightClosed {
   transform: translateX(100%);
 }
+

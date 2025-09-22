@@ -13,7 +13,8 @@ const CustomTooltip = ({ active, payload }) => {
     const entry = payload[0]; // PieTooltip passes only hovered slice
     return (
       <div style={{
-        background: "#fff",
+        background: "black",
+        color: "white",
         padding: "10px",
         borderRadius: "12px",
         boxShadow: "0 2px 8px rgba(0,0,0,0.15)",

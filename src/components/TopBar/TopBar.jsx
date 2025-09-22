@@ -29,9 +29,9 @@ function TopBar() {
           disabled
         />
         <Button onClick={toggleTheme}><img src={Theme} alt="theme" width={16} height={16} style={{filter: "var(--icon-filter)"}}/></Button>
-        <Button><img src={History} alt="history" width={16} height={16} style={{filter: "var(--icon-filter)"}}/></Button>
-        <Button><img src={Notification} alt="notification" width={16} height={16} style={{filter: "var(--icon-filter)"}}/></Button>
-        <Button onClick={toggleRight}>
+        <Button className={styles.hidden}><img src={History} alt="history" width={16} height={16} style={{filter: "var(--icon-filter)"}}/></Button>
+        <Button className={styles.hidden}><img src={Notification} alt="notification" width={16} height={16} style={{filter: "var(--icon-filter)"}}/></Button>
+        <Button onClick={toggleRight} className={styles.hidden}>
           <img src={SidePannel} alt="sidePannel" width={16} height={16} style={{filter: "var(--icon-filter)"}}/>
         </Button>
       </div>

@@ -19,8 +19,8 @@ function App() {
   device === "desktop"
     ? { position: "relative", overflow: "visible" }
     : device === "tablet"
-    ? { position: "absolute", zIndex: 999, width: "30%", height: "94vh" }
-    : { position: "absolute", zIndex: 999, width: "100%" };
+    ? { position: "absolute", zIndex: 999, width: "30%", minHeight: "94.5vh" }
+    : { position: "absolute", zIndex: 999, width: "100%", minHeight: "94.5vh" };
 
   return (
     <main className="app-container" style={device!=="desktop"?{height:"100vh",overflowY:"scroll"}:{}}>
@@ -42,7 +42,7 @@ function App() {
     </Routes>
   </div>
 {isRightOpen && 
-  <div className={`right-container ${isRightOpen ? "rightOpen" : "rightClosed"}`}>
+  <div className={`right-container ${isRightOpen ? "rightOpen" : "rightClosed"}`} style={isRightOpen ? { right: 0, ...navStyle } : undefined}>
     <Rightbar />
   </div>}
 </main>

@@ -57,7 +57,7 @@ export default function RevenueChart() {
           <span style={{ fontWeight: "bold", fontSize: "12px", paddingRight: "12px" }}>$58,211</span>  
           <span style={{ fontWeight: "normal", fontSize: "12px" }}><span className={Styles.circle} style={{ background: "#000" }}></span>Previous Week</span> <span style={{ fontWeight: "bold", fontSize: "12px" }}>$68,768</span>
       </h3>
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer width="100%" height="100%" minHeight={150}>
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="month" />
