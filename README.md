@@ -1,8 +1,8 @@
-# Hopeful Bartik
+# Order Insights Dashboard
 
 ## Overview
 
-Hopeful Bartik is a modern React project built with Vite. The project follows industry-standard practices by clearly separating concerns and organizing code into modular components, pages, hooks, contexts, and assets. This structure makes the project scalable, maintainable, and easy to understand.
+Order Insights Dashboard is a modern React project built with Vite. The project follows industry-standard practices by clearly separating concerns and organizing code into modular components, pages, hooks, contexts, and assets. This structure makes the project scalable, maintainable, and easy to understand.
 
 ## Project Structure
 
